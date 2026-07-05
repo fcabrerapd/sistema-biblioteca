@@ -8,6 +8,10 @@
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/postgresql-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 
+---
+[Leer en Español](README-es.md)
+---
+
 A full-stack web application developed to manage library catalogs, users, and the complete flow of book lending and returns. The project features a robust RESTful API on the backend and a dynamic interface on the frontend.
 
 ## Features
@@ -79,21 +83,26 @@ npm run dev
 ### Project Structure
 ```bash
 /sistema-biblioteca
+|-- /backend
+|   |-- /biblioteca_ERM
+|   |-- /endpoints-postman
+|   |-- /inventario
+|   |-- /ops
+|   |-- /usuarios
+|   |-- .env.example
+|   |-- Procfile
+|   |-- manage.py
+|   |-- requirements.txt
 |
-|-- /backend             --> Django Backend Core
-|   |-- /api             --> REST Framework apps, views, and serializers
-|   |-- /core            --> Django project settings & configuration
-|   |-- manage.py        --> Django entry point
-|   |-- requirements.txt --> Python dependencies
-|   |-- .env             --> Database secrets (Hidden)
-|
-|-- /frontend            --> React + Vite Client
+|-- /frontend
 |   |-- /sistema-biblioteca
-|       |-- /src         --> UI components, styles, and React logic
-|       |-- package.json --> Node.js dependencies & scripts
+|   |-- package-lock.json
 |
-|-- .gitignore           --> Git Ignore Rules (node_modules, .env, .venv)
-|-- README.md            --> Project documentation
+|-- .gitignore
+|-- Pipfile
+|-- Pipfile.lock
+|-- README.md
+|-- requirements.txt
 ```
 ## About the Project
 This is an academic project developed collaboratively in a team. My specific contributions focus on the Backend and API Architecture.
